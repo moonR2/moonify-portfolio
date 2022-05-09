@@ -15,7 +15,7 @@ const LogoBox = styled.span`
   margin-top: 10px;
 
   &:hover img {
-    transform: scale(20deg);
+    transform: scale(80deg);
   }
 `;
 const Logo = () => {
@@ -23,7 +23,6 @@ const Logo = () => {
     '',
     '-dark'
   )}.png`;
-  console.log(moonifyLogo);
   return (
     <Link href="/">
       <a>

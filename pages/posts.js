@@ -10,10 +10,10 @@ import contractsImage from '../public/images/contratos.png';
 const Posts = () => (
   <Layout title="Posts">
     <Container mt={20}>
-      <Heading as="h4" fontSize={20} mb={4}>
+      <Heading as="h3" fontSize={24} mb={10} variant="section-title">
         Posts
       </Heading>
-      <Section delay={0.5}>
+      <Section delay={0.2}>
         <SimpleGrid columns={[1, 1, 2]} gap={4}>
           <GridItem
             title="Mejora tu productividad como desarrollador usando Window Managers"

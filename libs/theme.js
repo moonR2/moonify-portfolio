@@ -1,10 +1,10 @@
-import { extendTheme } from '@chakra-ui/react';
+import { color, extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#f0e7db', '#2C2621')(props)
+      bg: mode('#F7F3EE', '#2C2621')(props)
     }
   })
 };
@@ -12,31 +12,44 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      'section-title': {
+      'section-title': props => ({
         textDecoration: 'underline',
         fontSize: 20,
         textUnderlineOffset: 6,
         textDecorationColor: '#525252',
         textDecorationThickness: 4,
         marginTop: 3,
-        marginButtom: 4
-      }
+        marginButtom: 4,
+        color: mode('#BF3F36', '#F8D668')(props)
+      })
     }
   },
   Link: {
     baseStyle: props => ({
-      color: mode('#3d7aed', '#ff63c3')(props),
+      color: mode('#3d7aed', '#FF675C')(props),
       textUnderlineOffset: 3
     })
+  },
+  Text: {
+    variants: {
+      title: props => ({
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: mode('#BF3F36', '#F8D668')(props)
+      })
+    }
   }
 };
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading: 'Karla',
+  body: 'Quicksand'
 };
 
 const colors = {
-  glassTeal: '#88ccca'
+  glassTeal: '#88ccca',
+  primaryYellow: '#F8D668',
+  primaryBlue: '#4DADD5'
 };
 
 const config = {

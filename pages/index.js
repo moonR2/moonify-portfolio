@@ -21,7 +21,9 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoLogoYoutube,
+  IoLogoReact
 } from 'react-icons/io5';
+import { SiDjango } from 'react-icons/si';
 
 const Page = () => {
   return (
@@ -29,12 +31,12 @@ const Page = () => {
       <Container mt={20}>
         <Box
           borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.200')}
           p={3}
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a full-stack developer.
+          Hello, I&apos;m <u>Moonify</u> a full-stack developer.
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -42,7 +44,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Andrés Orozco
             </Heading>
-            <p> Some random text that we need to think</p>
+            <p> Neverending learner and philosophy enthusiast.</p>
           </Box>
           <Box
             flexShrink={0}
@@ -64,15 +66,25 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title" mb={4}>
-            Work
+            Biography
           </Heading>
           <Paragraph>
             Hello folks! My name is Andrés Orozco (aka moonify) and I am an IT
-            engineer. I finished my studies this year at Yachay Tech university
-            🇪🇨. I am currently working on several projects to gain more
-            experience in full-stack development. I am an enthusiast of
-            blockchain technology, AI, and free software. I consider myself as a
-            neverending learner.
+            engineer from Ecuador 🇪🇨. I just finished my studies in July 2021,
+            so I&apos;m working hard to gain more experience.
+          </Paragraph>
+          <Paragraph>
+            Currently I&apos;m working at{' '}
+            <Link
+              href="https://www.linkedin.com/company/wiibiq/mycompany/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Wiibiq
+            </Link>{' '}
+            as full-stack developer using React/React-native{' '}
+            <IoLogoReact style={{ display: 'inline-block' }} /> and Django{' '}
+            <SiDjango size={15} style={{ display: 'inline-block' }} />.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/projects">
@@ -87,7 +99,8 @@ const Page = () => {
             Interests
           </Heading>
           <Paragraph>
-            Philosophy, Deep Learning, Window Managers and Free Software.
+            Philosophy, Deep learning, Linux, Free Software, Video Games, and
+            Note Taking.
           </Paragraph>
         </Section>
         <Section delay={0.3}>

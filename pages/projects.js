@@ -11,15 +11,16 @@ const Projects = () => {
   return (
     <Layout>
       <Container mt={20}>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={24} mb={10} variant="section-title">
           Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <ProjectGridItem
-              link={urls.gipps}
+              link={urls.projects.gipps}
               tittle="Gipp's Traffic Simulation"
               thumbnail={gippsSimulationImage}
+              stack={['python', 'numpy']}
             >
               A Python implementation of Gipps’ Car-Following model for traffic
               simulation. This was my degree project so maybe you will find the
@@ -28,13 +29,36 @@ const Projects = () => {
           </Section>
           <Section>
             <ProjectGridItem
-              link={urls.fn}
+              link={urls.projects.fn}
               tittle="FN-Tools"
               thumbnail={fnToolsImage}
+              stack={['csharp']}
             >
-              This was a set of tools developed in C# to change and force
-              certain configuration for Fornite BR from Epic Games. Now is
+              This was a set of tools that allow you to change and force certain
+              configuration for Fornite BR from Epic Games. The project now is
               deprecated.
+            </ProjectGridItem>
+          </Section>
+          <Section>
+            <ProjectGridItem
+              link={urls.projects.webpage}
+              tittle="This webpage"
+              thumbnail={fnToolsImage}
+              stack={['nextjs', 'chakra']}
+            >
+              I created this webpage as a remake of my old website. Also to
+              practice some react and its ecosystem.
+            </ProjectGridItem>
+          </Section>
+          <Section>
+            <ProjectGridItem
+              link={urls.projects.webpage}
+              tittle="Dotfiles"
+              thumbnail={fnToolsImage}
+              stack={['awesomewm', 'bash', 'zsh']}
+            >
+              This repo contains my system configuration files. Currently,
+              I&apos;m using Manjaro with awesomeWM and zsh.
             </ProjectGridItem>
           </Section>
         </SimpleGrid>
