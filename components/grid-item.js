@@ -1,11 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  Box,
-  Text,
-  LinkBox,
-  LinkOverlay,
-} from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 import mapStacks from '../utils/mapStacks';
 

@@ -1,11 +1,19 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  useColorModeValue
+} from '@chakra-ui/react';
 import Section from '../components/section';
 import { ProjectGridItem } from '../components/grid-item';
+import Layout from '../components/layouts/article';
+import urls from '../utils/urls';
 
 import gippsSimulationImage from '../public/images/gipps-simulation.png';
 import fnToolsImage from '../public/images/fn-tools.png';
-import Layout from '../components/layouts/article';
-import urls from '../utils/urls';
+import portfolioImage from '../public/images/portfolio.png';
+import portfolioImageDark from '../public/images/portfolio-dark.png';
+import dotFilesImage from '../public/images/dotfiles.png';
 
 const Projects = () => {
   return (
@@ -43,7 +51,7 @@ const Projects = () => {
             <ProjectGridItem
               link={urls.projects.webpage}
               tittle="This webpage"
-              thumbnail={fnToolsImage}
+              thumbnail={useColorModeValue(portfolioImage, portfolioImageDark)}
               stack={['nextjs', 'chakra']}
             >
               I created this webpage as a remake of my old website. Also to
@@ -54,7 +62,7 @@ const Projects = () => {
             <ProjectGridItem
               link={urls.projects.webpage}
               tittle="Dotfiles"
-              thumbnail={fnToolsImage}
+              thumbnail={dotFilesImage}
               stack={['awesomewm', 'bash', 'zsh']}
             >
               This repo contains my system configuration files. Currently,

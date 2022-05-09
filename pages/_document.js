@@ -6,7 +6,13 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content="Moonify's homepage" />
+          <meta name="author" content="Andres Orozco" />
+          <meta name="author" content="Moonify" />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />

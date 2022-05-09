@@ -76,9 +76,16 @@ const NavBar = props => {
           <LinkItem href="/posts" path={path}>
             Posts (es)
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <Link
+            p={2}
+            color={useColorModeValue('dark','whiteAlpha.800')}
+            fontFamily="karla"
+            fontSize="g"
+            href="https://www.dropbox.com/s/sm0htg616ejv94r/CVEN-COMPRESSED.pdf?dl=0"
+            target="_blank"
+          >
             Resume
-          </LinkItem>
+          </Link>
         </Stack>
 
         <Box flex={1} align="right">
@@ -101,9 +108,9 @@ const NavBar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <Link href="https://www.dropbox.com/s/sm0htg616ejv94r/CVEN-COMPRESSED.pdf?dl=0" target="_blank">
                   <MenuItem as={Link}>Resume</MenuItem>
-                </NextLink>
+                </Link>
               </MenuList>
             </Menu>
           </Box>
