@@ -8,7 +8,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Moonify's Portfolio</title>
+        <title>Moonify&apos;s Portfolio</title>
       </Head>
       <NavBar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
